@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+gunicorn = "*"
+dj-database-url = "*"
+"psycopg2-binary" = "*"
+django-rest-auth = {version = "*",extras = ["with_social"]}
+django-imagekit = "*"
+pillow = "*"
+django-extensions = "*"
+django-taggit = "*"
+werkzeug = "*"
+pyopenssl = "*"
+django-taggit-serializer = "*"
+django-tinymce = "*"
+django-autocomplete-light = "*"
+python-dateutil = "*"
+
+[dev-packages]
+httpie = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.6"

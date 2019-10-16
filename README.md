@@ -1,0 +1,1 @@
+# Django Events app with REST API
