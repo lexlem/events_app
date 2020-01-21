@@ -3,7 +3,7 @@ djangorestframework = "*"
 gunicorn = "*"
 dj-database-url = "*"
 "psycopg2-binary" = "*"
-django-rest-auth = {version = "*",extras = ["with_social"]}
+django-rest-auth[with_social] = "*"
 django-imagekit = "*"
 pillow = "*"
 django-extensions = "*"
