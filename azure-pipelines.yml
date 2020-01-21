@@ -19,6 +19,8 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install --user pipenv
+    export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+    export PATH="$PATH:$PYTHON_BIN_PATH"
     pipenv install
   displayName: 'Install dependencies'
 
