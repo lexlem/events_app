@@ -18,16 +18,10 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    pip install --user pipenv
-    export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
-    export PATH="$PATH:$PYTHON_BIN_PATH"
-    pipenv install
+    pip install -r requirements.txt
   displayName: 'Install dependencies'
 
 - script: |
-    export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
-    export PATH="$PATH:$PYTHON_BIN_PATH"
-    pipenv install pytest pytest-azurepipelines
-    pipenv shell
+    pip install pytest pytest-cov pytest-azurepipelines
     pytest
   displayName: 'pytest'
