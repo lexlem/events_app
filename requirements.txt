@@ -1,16 +1,16 @@
-django = "*"
-djangorestframework = "*"
-gunicorn = "*"
-dj-database-url = "*"
-"psycopg2-binary" = "*"
-django-rest-auth[with_social] = "*"
-django-imagekit = "*"
-pillow = "*"
-django-extensions = "*"
-django-taggit = "*"
-werkzeug = "*"
-pyopenssl = "*"
-django-taggit-serializer = "*"
-django-tinymce = "*"
-django-autocomplete-light = "*"
-python-dateutil = "*"
+django
+djangorestframework
+gunicorn
+dj-database-url
+"psycopg2-binary"
+django-rest-auth[with_social]
+django-imagekit
+pillow
+django-extensions
+django-taggit
+werkzeug
+pyopenssl
+django-taggit-serializer
+django-tinymce
+django-autocomplete-light
+python-dateutil
