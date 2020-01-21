@@ -25,6 +25,8 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
+    export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+    export PATH="$PATH:$PYTHON_BIN_PATH"
     pipenv install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
